@@ -1,6 +1,6 @@
 module "resource_group" {
-  source  = "../"
+  source = "../"
 
-  name        = "rg-${random_id.this.b64_std}"
-  location    = "eastus"
+  name     = "rg-${random_id.this.b64_std}"
+  location = "eastus"
 }
