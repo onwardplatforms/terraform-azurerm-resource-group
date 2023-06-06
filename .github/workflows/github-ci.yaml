@@ -1,0 +1,5 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  ci:
+    uses: onwardplatforms/terraform-ci/.github/workflows/terraform-ci.yaml@main
