@@ -17,5 +17,5 @@ provider "azurerm" {
 }
 
 provider "random" {
-  # Configuration options
+  # Configuration options (optional)
 }
