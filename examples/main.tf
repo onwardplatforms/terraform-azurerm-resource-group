@@ -1,6 +1,8 @@
 module "resource_group" {
   source = "../"
 
-  name     = "rg-${var.github_run_id}"
+  name     = "rg-${local.name_suffix}"
   location = "eastus"
+
+  tags = local.tags
 }
