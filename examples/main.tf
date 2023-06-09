@@ -1,6 +1,9 @@
+# Trigger workflow
 module "resource_group" {
-  source  = "../"
+  source = "../"
 
-  name        = "rg-${random_id.this.b64_std}"
-  location    = "eastus"
+  name     = "rg-${local.name_suffix}"
+  location = "eastus"
+
+  tags = local.tags
 }
