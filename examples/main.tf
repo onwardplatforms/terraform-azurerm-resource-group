@@ -1,6 +1,10 @@
-module "resource_group" {
-  source  = "../"
+# This script provides an implementation pattern for this module.
 
-  name        = "rg-${random_id.this.b64_std}"
-  location    = "eastus"
+module "resource_group" {
+  source = "../"
+
+  name     = "rg-${local.name_suffix}"
+  location = "eastus"
+
+  tags = local.tags
 }
