@@ -6,4 +6,4 @@ This Terraform modules create an Azure Resource Group.  A resource group is a co
 
 ## Learn
 
-https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal
+To learn more about this resource, [read the official Microsoft documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal).
