@@ -18,12 +18,12 @@ variable "github_ref_name" {
   type        = string
 }
 
-variables "github_actor" {
+variable "github_actor" {
   description = "The name of the person or app that initiated the workflow. For example, octocat."
   type        = string
 }
 
-variables "github_repository" {
+variable "github_repository" {
   description = "The owner and repository name. For example, octocat/Hello-World."
   type        = string
 }
