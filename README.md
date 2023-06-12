@@ -13,8 +13,6 @@ To learn more about this resource, [read the official Microsoft documentation](h
 ## Example
 
 ```hcl
-# This script provides an implementation pattern for this module.
-
 module "resource_group" {
   source = "../"
 
