@@ -18,6 +18,16 @@ variable "github_ref_name" {
   type        = string
 }
 
+variables "github_actor" {
+  description = "The name of the person or app that initiated the workflow. For example, octocat."
+  type        = string
+}
+
+variables "github_repository" {
+  description = "The owner and repository name. For example, octocat/Hello-World."
+  type        = string
+}
+
 variable "tags" {
   description = "A mapping of tags to assign to the resource."
   type        = map(string)
