@@ -7,6 +7,7 @@ locals {
       "GITHUB REF NAME"   = var.github_ref_name
       "GITHUB ACTOR"      = var.github_actor
       "GITHUB REPOSITORY" = var.github_repository
+      "ENVIRONMENT"       = var.environment
     }
   )
 }

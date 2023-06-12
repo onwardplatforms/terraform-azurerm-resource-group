@@ -28,6 +28,11 @@ variable "github_repository" {
   type        = string
 }
 
+variable "environment" {
+  description = "The name of the deployment environment."
+  type        = string
+}
+
 variable "tags" {
   description = "A mapping of tags to assign to the resource."
   type        = map(string)
