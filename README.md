@@ -51,5 +51,5 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| this | All resource group metadata. Available attributes can be found at:<br>  https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group |
+| self | All resource group metadata. Available attributes can be found at:<br>  https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group |
 <!-- END_TF_DOCS -->
