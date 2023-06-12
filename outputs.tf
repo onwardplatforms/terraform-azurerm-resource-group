@@ -1,4 +1,4 @@
-output "this" {
+output "self" {
   value       = azurerm_resource_group.this
   description = <<EOF
   All resource group metadata. Available attributes can be found at:
