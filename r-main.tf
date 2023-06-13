@@ -5,4 +5,3 @@ resource "azurerm_resource_group" "this" {
 
   tags = var.tags
 }
-
