@@ -2,5 +2,5 @@
 environment = "sandbox"
 
 tags = {
-  DESTROY = "true"
+  destroy = "true"
 }
