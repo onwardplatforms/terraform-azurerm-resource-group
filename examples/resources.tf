@@ -24,7 +24,7 @@ resource "random_integer" "this" {
 module "resource_group" {
   source = "../"
 
-  name = "rg-${local.naming}-${random_integer.this.result}"
+  name     = "rg-${local.naming}-${random_integer.this.result}"
   location = var.location
 
   tags = local.tags
