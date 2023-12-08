@@ -26,4 +26,6 @@ module "resource_group" {
 
   name = "rg-${local.naming}-${random_integer.this.result}"
   location = var.location
+
+  tags = local.tags
 }
