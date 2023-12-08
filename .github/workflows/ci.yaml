@@ -1,5 +1,5 @@
 name: CI
-on: [push]
+on: [push, workflow_dispatch]
 jobs:
   ci:
     uses: onwardplatforms/reusable-github-workflows/.github/workflows/terraform-ci.yaml@main
