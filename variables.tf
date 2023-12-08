@@ -34,5 +34,5 @@ variable "managed_by" {
 variable "tags" {
   type        = map(string)
   description = "A mapping of tags to assign to the resource."
-  default    = {}
+  default     = {}
 }

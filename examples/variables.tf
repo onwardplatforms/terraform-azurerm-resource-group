@@ -17,21 +17,21 @@ variable "github_sha" {
 }
 
 variable "github_ref_name" {
-    type        = string
-    description = "The name of the GitHub ref."
-    default     = null
+  type        = string
+  description = "The name of the GitHub ref."
+  default     = null
 }
 
 variable "github_actor" {
-    type        = string
-    description = "The name of the GitHub actor."
-    default     = null
+  type        = string
+  description = "The name of the GitHub actor."
+  default     = null
 }
 
 variable "github_repository" {
-    type        = string
-    description = "The name of the GitHub repository."
-    default     = null
+  type        = string
+  description = "The name of the GitHub repository."
+  default     = null
 }
 
 variable "environment" {
@@ -63,21 +63,21 @@ variable "location" {
 }
 
 variable "location_acronym" {
-    type        = string
-    description = "The acronym for the location."
-    default     = "eus"
+  type        = string
+  description = "The acronym for the location."
+  default     = "eus"
 }
 
 variable "app_name" {
   type        = string
   description = "The name of the workload or application."
-  default = null
+  default     = null
 }
 
 variable "app_acronym" {
   type        = string
   description = "The acronym for the application."
-  default = null
+  default     = null
 
   validation {
     condition     = can(regex("^[a-z0-9]{1,6}$", var.app_acronym))
@@ -86,15 +86,15 @@ variable "app_acronym" {
 }
 
 variable "tags" {
-    type        = map(string)
-    description = "A mapping of tags to assign to the resource."
-    default     = {}
+  type        = map(string)
+  description = "A mapping of tags to assign to the resource."
+  default     = {}
 
-    # This validation block checks if the tag keys meet the required conditions.
-    # The condition ensures that the tag keys either contain only lowercase alpha characters or underscores,
-    # or the tags map is empty.
-    validation {
-        condition     = length(keys(var.tags)) == 0 || alltrue([for k in keys(var.tags) : can(regex("^[a-z_]+$", k))])
-        error_message = "Tag keys must contain only lowercase alpha characters or underscores, or tags must be an empty map."
-    }
+  # This validation block checks if the tag keys meet the required conditions.
+  # The condition ensures that the tag keys either contain only lowercase alpha characters or underscores,
+  # or the tags map is empty.
+  validation {
+    condition     = length(keys(var.tags)) == 0 || alltrue([for k in keys(var.tags) : can(regex("^[a-z_]+$", k))])
+    error_message = "Tag keys must contain only lowercase alpha characters or underscores, or tags must be an empty map."
+  }
 }
